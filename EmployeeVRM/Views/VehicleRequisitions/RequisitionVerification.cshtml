@@ -1,0 +1,100 @@
+﻿@model EmployeeVRM.Models.VehicleRequisition
+
+@{
+    ViewBag.Title = "RequisitionVerification";
+}
+
+<h3>Requisition Verification</h3>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" style="padding-left: 170px;">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ReportingDateTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.ReportingDateTime)
+                @Html.HiddenFor(model => model.ReportingDateTime)
+                @Html.ValidationMessageFor(model => model.ReportingDateTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("EmployeeID", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.Employee.Name) <br />
+                @Html.DisplayFor(model => model.Employee.designation.Name) <i> , </i>
+                @Html.DisplayFor(model => model.Employee.department.Name)
+                @Html.HiddenFor(model => model.EmployeeID)
+                @Html.ValidationMessageFor(model => model.EmployeeID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StartDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.StartDate)
+                @Html.HiddenFor(model => model.StartDate)
+                @Html.ValidationMessageFor(model => model.StartDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EndDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.EndDate)
+                @Html.HiddenFor(model => model.EndDate)
+                @Html.ValidationMessageFor(model => model.EndDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Cause, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.Cause)
+                @Html.HiddenFor(model => model.Cause)
+                @Html.ValidationMessageFor(model => model.Cause, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Vehicle", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.Vehicle.RegistrationNo)
+                <i>-</i>
+                @Html.DisplayFor(model => model.Vehicle.Name)
+                @Html.HiddenFor(model => model.VehicleID)
+                @Html.ValidationMessageFor(model => model.VehicleID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Remarks, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.Remarks)
+                @Html.HiddenFor(model => model.Remarks)
+                @Html.ValidationMessageFor(model => model.Remarks, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Verify" name="decision" class="btn btn-success" /> &nbsp;
+                <input type="submit" value="Reject" name="decision" class="btn btn-danger" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

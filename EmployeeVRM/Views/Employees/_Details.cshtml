@@ -1,0 +1,117 @@
+﻿@model EmployeeVRM.Models.Employee
+
+<form name="DetailsForm">
+    @Html.AntiForgeryToken()
+
+    <div class="modal-header" style="background-color: #add2f9; padding-left: 20px;">
+        <h5 class="modal-title" id="popupModalLabel">Employee Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body" style="padding-left:130px;">
+
+        <dl class="dl-horizontal">
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.department.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.department.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.designation.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.designation.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.FatherName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FatherName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MotherName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MotherName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DateOfBirth)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DateOfBirth)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.JoiningDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.JoiningDate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.MobileNo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.MobileNo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ApplicationUser.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ApplicationUser.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NID)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NID)
+            </dd>
+
+        </dl>
+
+    </div>
+
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+
+</form>
+
+
+

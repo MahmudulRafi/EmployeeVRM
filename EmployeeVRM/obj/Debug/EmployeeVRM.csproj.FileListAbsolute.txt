@@ -1,0 +1,439 @@
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll.config
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.pdb
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe.config
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.rsp
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe.config
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.rsp
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Managed.Core.targets
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.AppContext.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Collections.Immutable.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Console.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Globalization.Calendars.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Http.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Sockets.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Reflection.Metadata.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.ValueTuple.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XmlDocument.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe.config
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.rsp
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe.config
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\EntityFramework.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Web.Infrastructure.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Owin.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\WebGrease.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.pdb
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\EntityFramework.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CoreCompileInputs.cache
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CopyComplete
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.dll
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.pdb
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.Migrations.migfirst.resources
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.GenerateResource.cache
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csprojAssemblyReference.cache
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.Migrations.migsecond.resources
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.Migrations.migthird.resources
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.Migrations.migfour.resources
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.Migrations.migfive.resources
+D:\RaFI-Doc\C# Project\Undefined\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.Migrations.migsix.resources
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.pdb
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.rsp
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.rsp
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.AppContext.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Collections.Immutable.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Console.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Globalization.Calendars.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Http.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Sockets.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.ValueTuple.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.rsp
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\EntityFramework.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Web.Infrastructure.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Owin.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\WebGrease.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\EntityFramework.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.pdb
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CoreCompileInputs.cache
+C:\C#_Project\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CopyComplete
+C:\C#_Project\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.pdb
+C:\C#_Project\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csprojAssemblyReference.cache
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll.config
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.pdb
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe.config
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.rsp
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe.config
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.rsp
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.AppContext.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Collections.Immutable.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Console.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Globalization.Calendars.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Http.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Sockets.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.ValueTuple.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe.config
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.rsp
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe.config
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Web.Infrastructure.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Owin.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\WebGrease.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.pdb
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CoreCompileInputs.cache
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CopyComplete
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.dll
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.pdb
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EmployeeVRM.pdb
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csc.rsp
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\csi.rsp
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Managed.Core.targets
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.AppContext.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Collections.Immutable.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Console.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Globalization.Calendars.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Http.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Net.Sockets.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Reflection.Metadata.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.ValueTuple.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XmlDocument.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\vbc.rsp
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\roslyn\VBCSCompiler.exe.config
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Web.Infrastructure.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Owin.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\WebGrease.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\EntityFramework.SqlServer.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Helpers.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Mvc.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Optimization.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.Razor.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Deployment.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\System.Web.WebPages.Razor.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Newtonsoft.Json.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Antlr3.Runtime.pdb
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Core.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Facebook.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Cookies.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Google.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.Twitter.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.Owin.Security.OAuth.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CoreCompileInputs.cache
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csproj.CopyComplete
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.dll
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.pdb
+C:\C#_Project\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csprojAssemblyReference.cache
+C:\EmployeeVRM\EmployeeVRM\EmployeeVRM\obj\Debug\EmployeeVRM.csprojAssemblyReference.cache

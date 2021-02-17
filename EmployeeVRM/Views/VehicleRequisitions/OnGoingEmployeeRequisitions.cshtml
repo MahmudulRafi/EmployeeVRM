@@ -1,0 +1,143 @@
+﻿@{
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OnGoing Requisitions</title>
+    <script>
+
+        var dataTable;
+
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+
+                "processing": true, // for show progress bar
+            
+
+                "ajax": {
+                    "url": "/VehicleRequisitions/GetEmployeeOnGoingRquisitions",
+                    "type": "POST",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "Vehicle", "autowidth": true },
+                    { "data": "ReportingDateTime", "autowidth": true },
+                    { "data": "StartDate", "autowidth": true },
+                    { "data": "EndDate", "autowidth": true },
+
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="DetailsRequisition(' + data + ')"> Details</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="CancelOrComplete(' + data + ')"> Cancel  Complete</button>'
+                        }
+                    }
+
+                ]
+
+            });
+        });
+
+        function DetailsRequisition(id) {
+            $.get("/VehicleRequisitions/DetailsPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function CancelOrComplete(id) {
+            $.get("/VehicleRequisitions/CancelOrCompleteFormView", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Completed(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="CancelOrCompleteForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/VehicleRequisitions/RequisitionVerified", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Requisition Completed", "Completed");
+                    }
+
+                })
+            }
+
+        }
+
+
+        function Cancelled(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="CancelOrCompleteForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/VehicleRequisitions/RequisitionRejected", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.danger("Requisition Cancelled", "Cancelled");
+                    }
+
+                })
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <h3 style="color:maroon;"> On Going Requisitions</h3>
+    <br />
+    <div class="container">
+        <br />
+        <table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+            <thead class="thead-light text-lg-center">
+                <tr>
+                    <th>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Vehicle
+                    </th>
+                    <th>
+                        Reporting Date Time
+                    </th>
+                    <th>
+                        Start Date
+                    </th>
+                    <th>
+                        End Date
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" id="popupModalBody">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

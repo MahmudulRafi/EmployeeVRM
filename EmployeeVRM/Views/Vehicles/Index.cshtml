@@ -1,0 +1,147 @@
+﻿@model IEnumerable<EmployeeVRM.Models.Vehicle>
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    <a class="btn btn-success" style="margin-bottom:10px" onclick="CreateVehicle()"><i class="fa fa-plus"></i> Add Vehicle</a>
+</p>
+<table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+    <thead class="thead-light text-black text-lg-center">
+        <tr>
+            <th>Registration No</th>
+            <th>Name</th>
+            <th>Seat Allocated</th>
+            <th>Type</th>
+            <th></th>
+            <th></th>
+
+        </tr>
+    </thead>
+</table>
+
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+
+    <script>
+
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+                "ajax": {
+                    "url": "Vehicles/GetAllVehicles",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "RegistrationNo", "autowidth": true },
+                    { "data": "VehicleName", "autowidth": true },
+                    { "data": "SeatAllocated", "autowidth": true },
+                    { "data": "VehicleType", "autowidth": true },
+
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="EditVehicle(' + data + ')"> Edit</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="DeleteVehicle(' + data + ')"> Delete</button>'
+                        }
+                    }
+
+
+
+                ]
+            });
+
+        });
+
+        function CreateVehicle() {
+            $.get("/Vehicles/CreatePartial", function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Create() {
+            var modal = $("#popupModal");
+            var form = $('form[name="CreateForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Vehicles/Create", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Vehicle Added Successfully.", "Added");
+                    }
+
+                })
+            }
+
+        }
+
+        function EditVehicle(id) {
+            $.get("/Vehicles/EditPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Edit(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="EditForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Vehicles/Edit", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.info("Vehicle Updated Sucessfully", "Updated");
+                    }
+
+                })
+            }
+
+        }
+
+        function DeleteVehicle(id) {
+            $.get("/Vehicles/DeletePartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+        function Delete(id) {
+            var modal = $("#popupModal");
+            $.post("/Vehicles/Delete/", { id: id }, function (res) {
+                if (res == true) {
+                    modal.modal('hide');
+                    dataTable.ajax.reload();
+                    toastr.error("Vehicle Deleted Successfully", "Delete");
+                }
+            })
+        }
+
+    </script>
+
+}

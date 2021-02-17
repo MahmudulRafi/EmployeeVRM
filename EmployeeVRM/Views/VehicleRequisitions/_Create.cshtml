@@ -1,0 +1,91 @@
+﻿@model EmployeeVRM.Models.VehicleRequisition
+
+<form name="CreateForm">
+    @Html.AntiForgeryToken()
+
+    <div class="modal-header" style="background-color: #793f94; color: white; padding-left:20px;">
+        <h5 class="modal-title" id="popupModalLabel">Add Requisition</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="row" style="padding-left:90px;">
+            <div class="col-md-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.StartDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.StartDate, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.StartDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.EndDate, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.EndDate, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.EndDate, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Cause, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Cause, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Cause, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.VehicleID, "Vehicle", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+
+                        @Html.DropDownListFor(model => model.VehicleID, (SelectList)ViewBag.VehicleList, new { @class = "form-control" })
+
+                        @Html.ValidationMessageFor(model => model.VehicleID, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Remarks, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Remarks, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Remarks, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="Create()" class="btn btn-default" style="background-color: #793f94; color:white;"> Add</button>
+    </div>
+
+</form>
+
+
+@section Scripts{
+
+
+}
+<script type="text/javascript">
+    $(function () {
+        $('#StartDate').datetimepicker({
+            format: "DD-MM-YYYY"
+        }).on('dp.change', function (e) {
+            $(this).data('DateTimePicker').hide();
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('#EndDate').datetimepicker({
+            format: "DD-MM-YYYY"
+        }).on('dp.change', function (e) {
+            $(this).data('DateTimePicker').hide();
+        });
+    });
+</script>

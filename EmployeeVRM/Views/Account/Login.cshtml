@@ -1,0 +1,72 @@
+﻿@using EmployeeVRM.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+    Layout = null;
+}
+<head>
+    <title>Log in - EmployeeVRM</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Trendy Flat Login Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Meta tag Keywords -->
+    <!--font-awesome-css-->
+    <link href="~/Content/UIContent/login/css/font-awesome.css" rel="stylesheet" />
+    <!--//font-awesome-css-->
+    <!-- css files -->
+    <link href="~/Content/UIContent/login/css/style.css" rel="stylesheet" />
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900iSlabo+27px&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <!--//online-fonts -->
+    <!--header-->
+    <div class="agileheader">
+        <h1>EmployeeVRM</h1>
+    </div>
+    <!--//header-->
+    <!--main-->
+    <section class="main-w3l">
+        <div class="w3layouts-main">
+            <h2>Login Now</h2>
+
+            @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="w3ls-form">
+                    <div class="email-w3ls">
+                        <input type="Email" name="Email" placeholder="E-mail" required="">
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        <span class="icon1"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="w3ls-password">
+                        <input type="password" name="password" placeholder="Password" required="">
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        <span class="icon3"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                    </div>
+
+                    <span>
+                        @Html.CheckBoxFor(m => m.RememberMe)
+                        @Html.LabelFor(m => m.RememberMe)
+                    </span>
+                    <h6>@Html.ActionLink("Forgot password?", "ForgotPassword")</h6>
+                    <div class="clear"></div>
+                    <input type="submit" value="Log in" class="btn btn-default" />
+                </div>
+            }
+
+            <div class="w3ls-bottom">
+                <p>@Html.ActionLink("Register Account", "Register")</p>
+            </div>
+        </div>
+    </section>
+    <!--//main-->
+    <!--footer-->
+    <div class="footer-w3l">
+        <p>&copy; 2020. EmployeeVRM</a></p>
+    </div>
+    <!--//footer-->
+

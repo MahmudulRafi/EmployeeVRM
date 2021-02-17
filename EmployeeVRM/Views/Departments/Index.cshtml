@@ -1,0 +1,141 @@
+﻿@model IEnumerable<EmployeeVRM.Models.Department>
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    <a class="btn btn-success" style="margin-bottom:10px" onclick="CreateDepartment()"><i class="fa fa-plus"></i> Add Department</a>
+</p>
+<table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+    <thead class="thead-light text-black text-lg-center">
+        <tr>
+            <th>Department</th>
+            <th>Edit</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+</table>
+
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+
+    <script>
+
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+                "ajax": {
+                    "url": "Departments/GetAllDepartments",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "Name", "autowidth": true },
+
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="EditDepartment(' + data + ')"> Details</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="DeleteDepartment(' + data + ')"> Delete</button>'
+                        }
+                    }
+
+
+
+                ]
+            });
+
+        });
+
+        function CreateDepartment() {
+            $.get("/Departments/CreatePartial", function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Create() {
+            var modal = $("#popupModal");
+            var form = $('form[name="CreateForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Departments/Create", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Department Added Successfully.", "Added");
+                    }
+
+                })
+            }
+
+        }
+
+        function EditDepartment(id) {
+            $.get("/Departments/EditPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Edit(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="EditForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Departments/Edit", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.info("Department Updated Sucessfully", "Updated");
+                    }
+
+                })
+            }
+
+        }
+
+        function DeleteDepartment(id) {
+            $.get("/Departments/DeletePartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+        function Delete(id) {
+            var modal = $("#popupModal");
+            $.post("/Departments/Delete/", { id: id }, function (res) {
+                if (res == true) {
+                    modal.modal('hide');
+                    dataTable.ajax.reload();
+                    toastr.error("Department Deleted Successfully", "Delete");
+                }
+            })
+        }
+
+    </script>
+
+}

@@ -1,0 +1,41 @@
+﻿@model EmployeeVRM.Models.Supplier
+
+<form name="CreateForm">
+    @Html.AntiForgeryToken()
+
+    <div class="modal-header" style="background-color: #793f94; color: white; padding-left:20px;">
+        <h5 class="modal-title" id="popupModalLabel">Add Supplier</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body">
+        <div class="row" style="padding-left:90px;">
+            <div class="col-md-12">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.CompanyName, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Phone, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="Create()" class="btn btn-default" style="background-color: #793f94; color:white;"> Add</button>
+    </div>
+
+</form>
+

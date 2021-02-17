@@ -1,0 +1,147 @@
+﻿@model EmployeeVRM.Models.VehicleRequisition
+
+<form name="DetailsForm">
+    @Html.AntiForgeryToken()
+
+    <div class="modal-header" style="background-color: #add2f9; padding-left: 20px;">
+        <h5 class="modal-title" id="popupModalLabel">Requisition Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body" style="padding-left:75px;">
+
+        <dl class="dl-horizontal">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <dt>
+                        @Html.DisplayName("Employee")
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Employee.Name)<br />
+                        @Html.DisplayFor(model => model.Employee.designation.Name) <i> , </i>
+                        @Html.DisplayFor(model => model.Employee.department.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayName("Vehicle")
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Vehicle.RegistrationNo) <i> - </i>
+                        @Html.DisplayFor(model => model.Vehicle.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ReportingDateTime)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ReportingDateTime)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.StartDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.StartDate)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.EndDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.EndDate)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Cause)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Cause)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Remarks)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Remarks)
+                    </dd>
+
+                </div>
+
+                <div class="col-md-6" style="padding-left:35px; padding-right:50px;">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.VerificationStatus)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.VerificationStatus)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.VerificationDateTime)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.VerificationDateTime)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayName("Verified By")
+                    </dt>
+
+                    <dd>
+                        @ViewBag.verifierName <br />
+                        @ViewBag.veirifierDesignation @ViewBag.comma
+                        @ViewBag.veirifierDepartment
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ApprovalStatus)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ApprovalStatus)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.ApprovalDateTime)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.ApprovalDateTime)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayName("Approved By")
+                    </dt>
+
+                    <dd>
+                        @ViewBag.approverName <br />
+                        @ViewBag.approverDesignation @ViewBag.comma
+                        @ViewBag.approverDepartment
+                    </dd>
+                </div>
+            </div>
+                </dl>
+
+        
+
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+</form>
+
+
+

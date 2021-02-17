@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+
+<br />
+<div>
+
+
+
+    @if (User.IsInRole("Admin") || User.IsInRole("Employee") || User.IsInRole("Manager") || User.IsInRole("VTM") || User.IsInRole("Director"))
+    {
+        if (User.IsInRole("Admin"))
+        {
+            @Html.Partial("_AdminPartial")
+        }
+        <br />
+        if (User.IsInRole("VMT") || User.IsInRole("Director"))
+        {
+            @Html.Partial("_VMTPartial")
+        }
+
+        <br />
+
+        if (User.IsInRole("Manager"))
+        {
+            @Html.Partial("_ManagerPartial")
+        }
+        <br />
+        if (User.IsInRole("Employee"))
+        {
+            @Html.Partial("_EmployeePartial")
+        }
+
+
+    }
+    else
+    {
+        <h4>hello!</h4>
+        <h2>@ViewBag.EmployeeWelcome</h2>
+
+        <br />
+        <a class="btn btn-success" style="margin-bottom:10px" href="@Url.Action("Create", "Employees")"><i class="fa fa-user-edit"></i> Complete Profile</a>
+
+    }
+</div>
+    <br />
+   

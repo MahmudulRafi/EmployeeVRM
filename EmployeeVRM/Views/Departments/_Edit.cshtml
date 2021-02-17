@@ -1,0 +1,34 @@
+﻿@model EmployeeVRM.Models.Department
+
+<form name="EditForm">
+    @Html.AntiForgeryToken()
+
+    <div class="modal-header" style="background-color: #e8b316; padding-left: 20px;">
+        <h5 class="modal-title" id="popupModalLabel">Update Department</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+  
+    <div class="modal-body">
+        @Html.HiddenFor(d => d.id)
+        <div class="row" style="padding-left:85px;">
+            <div class="col-md-12">
+                <div class="form-group">
+                    @Html.LabelFor(d => d.Name, htmlAttributes: new { @class = "control-lebel-col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(d => d.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(d => d.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="Edit()" class="btn btn-warning"> Save</button>
+    </div>
+
+</form>
+

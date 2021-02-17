@@ -1,0 +1,108 @@
+﻿@model EmployeeVRM.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+<div style="padding-left:200px;">
+
+
+<div>
+    <h3>Employee Details</h3>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.department.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.department.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.designation.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.designation.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FatherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FatherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MotherName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MotherName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JoiningDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JoiningDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobileNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobileNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationUser.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationUser.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink(" Edit", "Edit", new { id = Model.EmployeeID }, new { @class = "btn btn-secondary btn-sm" })
+    @Html.ActionLink("Back to List", "Index")
+</p>
+</div>

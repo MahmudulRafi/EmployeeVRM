@@ -1,0 +1,76 @@
+﻿@model IEnumerable<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<span id="Added" class="d-none">@TempData["Added"]</span>
+<span id="Deleted" class="d-none">@TempData["Deleted"]</span>
+
+<br />
+
+<div>
+
+    <p>
+        <a class="btn btn-success" style="margin-bottom:10px" href="@Url.Action("Create", "Roles")"><i class="fa fa-user-plus"></i> Add Role</a>
+    </p>
+    <br />
+
+    <table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+        <thead class="thead-light text-black text-lg-center">
+            <tr>
+                <th>
+                    @Html.Label("Role Name")
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.ActionLink(" Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-sm" })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <br />
+</div>
+<div style="padding-left:40px;">
+    @Html.ActionLink("Assign Role", "Index", "UserRoles")
+</div>
+
+@section Scripts
+{
+    <script>
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var addedMessage = $('#Added').text();
+            if (addedMessage != '') {
+                toastr.success(addedMessage, "Added");
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var deletedMessage = $('#Deleted').text();
+            if (deletedMessage != '') {
+                toastr.error(deletedMessage, "Delete");
+            }
+        });
+    </script>
+}

@@ -1,0 +1,142 @@
+﻿@model EmployeeVRM.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+<span id="Updated" class="d-none">@TempData["Updated"]</span>
+
+
+<div style="padding-left:220px;">
+
+    @if (Model.EmployeeID != 0)
+    {
+        <div>
+            <h3 style="color:maroon;">My Profile</h3>
+
+            <br />
+            <hr />
+
+
+
+            <dl class="dl-horizontal">
+                <div class="row">
+                    <div class="col-md-6">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.department.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.department.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.designation.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.designation.Name)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.FatherName)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.FatherName)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MotherName)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.MotherName)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.DateOfBirth)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.DateOfBirth)
+                        </dd>
+                    </div>
+                    <div class="col-md-6">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.JoiningDate)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.JoiningDate)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.MobileNo)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.MobileNo)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.ApplicationUser.Email)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.ApplicationUser.Email)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Address)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Address)
+                        </dd>
+
+                        <dt>
+                            @Html.DisplayNameFor(model => model.NID)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.NID)
+                        </dd>
+                        </div>
+                    </div>
+
+</dl>
+            <hr />
+            <p style="padding-left:440px;">
+                @Html.ActionLink(" Edit", "Edit", new { id = Model.EmployeeID }, new { @class = "btn btn-warning btn-sm" })
+            </p>
+        </div>
+
+    }
+    else
+    {
+        <a class="btn btn-success" style="margin-bottom:10px" href="@Url.Action("Create", "Employees")"><i class="fa fa-user-edit"></i> Complete Profile</a>
+    }
+
+</div>
+
+@section Scripts {
+
+    <script>
+        $(document).ready(function () {
+
+            var updatedMessage = $('#Updated').text();
+            if (updatedMessage != '') {
+                toastr.info(updatedMessage, "Updated");
+            }
+        });
+    </script>
+
+}

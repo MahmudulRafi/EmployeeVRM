@@ -1,0 +1,141 @@
+﻿@model IEnumerable<EmployeeVRM.Models.Designation>
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    <a class="btn btn-success" style="margin-bottom:10px" onclick="CreateDesignation()"><i class="fa fa-plus"></i> Add Designation</a>
+</p>
+<table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+    <thead class="thead-light text-black text-lg-center">
+        <tr>
+            <th>Designation</th>
+            <th>Edit</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+</table>
+
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+
+    <script>
+
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+                "ajax": {
+                    "url": "Designations/GetAllDesignations",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "Name", "autowidth": true },
+
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="EditDesignation(' + data + ')"> Edit</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="DeleteDesignation(' + data + ')"> Delete</button>'
+                        }
+                    }
+
+
+
+                ]
+            });
+
+        });
+
+        function CreateDesignation() {
+            $.get("/Designations/CreatePartial", function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Create() {
+            var modal = $("#popupModal");
+            var form = $('form[name="CreateForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Designations/Create", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Designation Added Successfully.", "Added");
+                    }
+
+                })
+            }
+
+        }
+
+        function EditDesignation(id) {
+            $.get("/Designations/EditPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Edit(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="EditForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Designations/Edit", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.info("Designation Updated Sucessfully", "Updated");
+                    }
+
+                })
+            }
+
+        }
+
+        function DeleteDesignation(id) {
+            $.get("/Designations/DeletePartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+        function Delete(id) {
+            var modal = $("#popupModal");
+            $.post("/Designations/Delete/", { id: id }, function (res) {
+                if (res == true) {
+                    modal.modal('hide');
+                    dataTable.ajax.reload();
+                    toastr.error("Designation Deleted Successfully", "Delete");
+                }
+            })
+        }
+
+    </script>
+
+}

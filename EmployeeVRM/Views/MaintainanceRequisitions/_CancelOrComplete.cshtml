@@ -1,0 +1,128 @@
+﻿
+@model EmployeeVRM.Models.MaintainanceRequisition
+
+<form name="CancelOrCompleteForm">
+    @Html.AntiForgeryToken()
+
+    <div class="modal-header" style="background-color: #2d9667; color: white; padding-left: 20px;">
+        <h5 class="modal-title" id="popupModalLabel">Approv Maintainance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body" style="padding-left:130px;">
+
+        @Html.HiddenFor(model => model.id)
+        <br />
+        <div class="form-group">
+            @Html.Label("Vehicle", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.Vehicle.RegistrationNo)<i> - </i>  @Html.DisplayFor(model => model.Vehicle.Name)
+                @Html.HiddenFor(model => model.VehicleID)
+                @Html.ValidationMessageFor(model => model.VehicleID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        @Html.HiddenFor(model => model.DriverID)
+        <div class="form-group">
+            @Html.Label("Supplier", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.Supplier.CompanyName)
+                @Html.HiddenFor(model => model.Supplierid)
+                @Html.ValidationMessageFor(model => model.Supplierid, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PartsNeeded, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.PartsNeeded)
+                @Html.HiddenFor(model => model.PartsNeeded)
+                @Html.ValidationMessageFor(model => model.PartsNeeded, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PartsCost, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.PartsCost)
+                @Html.HiddenFor(model => model.PartsCost)
+                @Html.ValidationMessageFor(model => model.PartsCost, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ServiceCosting, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.ServiceCosting)
+                @Html.HiddenFor(model => model.ServiceCosting)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.EstimitedDeliveryDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.EstimitedDeliveryDate)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.HiddenFor(model => model.VerificationStatus)
+            @Html.HiddenFor(model => model.EstimitedDeliveryDate)
+            @Html.HiddenFor(model => model.ReportingDateTime)
+
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Requisition By", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @ViewBag.verifierName <br />
+                @ViewBag.veirifierDesignation <i> , </i>
+                @ViewBag.veirifierDepartment
+                @Html.HiddenFor(model => model.VerifiedBy)
+                @Html.ValidationMessageFor(model => model.VerifiedBy, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Approval Status", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.ApprovalStatus)
+                @Html.HiddenFor(model => model.ApprovalStatus)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.Label("Approval Date Time", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DisplayFor(model => model.ApprovalDateTime)
+                @Html.HiddenFor(model => model.ApprovalDateTime)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Approved By", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @ViewBag.approverName <br />
+                @ViewBag.approverDesignation <i> , </i>
+                @ViewBag.approverDepartment
+                @Html.HiddenFor(model => model.ApprovedBy)
+            </div>
+        </div>
+
+
+        <div class="modal-footer">
+            <button type="button" onclick="Completed(@Model.id)" class="btn btn-success" style="background-color: #2d9667; color:white;"> Completed</button>
+            <button type="button" onclick="Cancelled(@Model.id)" class="btn btn-danger"> Cancel</button>
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+
+
+
+}
+
+

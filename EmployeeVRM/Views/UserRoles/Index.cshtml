@@ -1,0 +1,76 @@
+﻿@model IEnumerable<EmployeeVRM.Models.UsersAssignedRolesVM>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<span id="Assigned" class="d-none">@TempData["Assigned"]</span>
+<span id="Removed" class="d-none">@TempData["Removed"]</span>
+
+<div>
+    <br />
+    <p>
+        <a class="btn btn-warning" style="margin-bottom:10px" href="@Url.Action("Create", "UserRoles")"><i class="fa fa-user-edit"></i> Assign Role</a>&nbsp
+        <a class="btn btn-success" style="margin-bottom:10px" href="@Url.Action("Index", "Roles")"><i class="fa fa-user"></i> Role Manager</a>
+    </p>
+    <br />
+    <table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+        <thead class="thead-light text-black text-lg-center">
+            <tr>
+                <th>User Name</th>
+                <th>Role</th>
+                <th></th>
+            </tr>
+        </thead>
+        @foreach (var users in Model)
+        {
+            foreach (string rolesName in users.RoleNames)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => users.User.UserName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => rolesName)
+                    </td>
+                    <td>
+                        @Html.ActionLink(" Delete", "Delete", new { }, new { @class = "btn btn-danger btn-sm" })
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+</div>
+
+@section Scripts
+{
+    <script>
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+
+            var assignMessage = $('#Assigned').text();
+            if (assignMessage != '') {
+                toastr.success(assignMessage, "Added");
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var removeMessage = $('#Removed').text();
+            if (removeMessage != '') {
+                toastr.error(removeMessage, "Delete");
+            }
+        });
+    </script>
+}

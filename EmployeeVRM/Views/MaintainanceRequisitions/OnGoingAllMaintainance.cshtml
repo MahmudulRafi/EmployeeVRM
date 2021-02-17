@@ -1,0 +1,160 @@
+﻿
+@{
+    ViewBag.Title = "Maintainance";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Maintainance</title>
+    <script>
+
+        var dataTable;
+
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+
+                "processing": true, // for show progress bar
+
+                "ajax": {
+                    "url": "/MaintainanceRequisitions/GetAllOnGoingMaintainanceRequisition",
+                    "type": "POST",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "VehicleID", "autowidth": true },
+                    { "data": "DriverID", "autowidth": true },
+                    { "data": "ReportingDateTime", "autowidth": true },
+                    { "data": "Cause", "autowidth": true },
+                    { "data": "PartsCosting", "autowidth": true },
+                    { "data": "Supplier", "autowidth": true },
+                    { "data": "EstimatedDelivery", "autowidth": true },
+
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="DetailsRequisition(' + data + ')"> Details</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="CancelOrCompleteForm(' + data + ')"> Cancel  Complete</button>'
+                        }
+                    }
+
+                ]
+
+            });
+        });
+
+        function DetailsRequisition(id) {
+            $.get("/MaintainanceRequisitions/DetailsPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function CancelOrCompleteForm(id) {
+            $.get("/MaintainanceRequisitions/CancelOrCompleteFormView", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Completed(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="CancelOrCompleteForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/MaintainanceRequisitions/CompletedOnGoingMaintainance", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Maintainance Completed", "Completed");
+                    }
+
+                })
+            }
+
+        }
+
+
+        function Cancelled(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="CancelOrCompleteForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/MaintainanceRequisitions/CancelledOnGoingMaintainance", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.danger("Maintainance Cancelled", "Cancelled");
+                    }
+
+                })
+            }
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <h3 style="color:maroon;"> On Going Maintainance</h3>
+    <br />
+    <div class="container">
+        <br />
+        <table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+            <thead class="thead-light text-lg-center">
+                <tr>
+                    <th>
+                        Vehicle
+                    </th>
+                    <th>
+                        Driver
+                    </th>
+                    <th>
+                        Date Time
+                    </th>
+                    <th>
+                        Issue
+                    </th>
+                    <th>
+                        Parts Costing
+                    </th>
+                    <th>
+                        Supplier
+                    </th>
+                    <th>
+                        Estimated Delivery
+                    </th>
+                    <th></th>
+                    <th></th>
+                    <th>
+
+                    </th>
+                </tr>
+            </thead>
+        </table>
+
+        <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content" id="popupModalBody">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
+

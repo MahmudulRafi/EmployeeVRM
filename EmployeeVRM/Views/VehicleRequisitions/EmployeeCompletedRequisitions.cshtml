@@ -1,0 +1,88 @@
+﻿@model IEnumerable<EmployeeVRM.Models.VehicleRequisition>
+
+@{
+    ViewBag.Title = "Vehicle Requisition";
+}
+
+<h3 style="color:maroon;">Completed Requisitions</h3>
+
+<br />
+
+<a class="btn btn-danger" style="margin-bottom:10px" href="@Url.Action("EmployeeFailedRequisitions", "VehicleRequisitions")"><i class="fa fa-car"></i> Incomplete Requisition</a>
+
+<br />
+<table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+    <thead class="thead-light text-lg-center">
+        <tr>
+            <th>
+                @Html.DisplayName("Vehicle")
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReportingDateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Vehicle.RegistrationNo)
+                    <i> - </i>
+                    @Html.DisplayFor(modelItem => item.Vehicle.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReportingDateTime)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+
+                    <button class="btn btn-info btn-sm" onclick="DetailsRequisition(@item.id)"> Details</button> <br />
+
+
+                </td>
+            </tr>
+        }
+
+</table>
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+
+        function DetailsRequisition(id) {
+            $.get("/VehicleRequisitions/DetailsPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+    </script>
+}

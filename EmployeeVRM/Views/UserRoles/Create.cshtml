@@ -1,0 +1,39 @@
+﻿@model EmployeeVRM.Models.UserRoleVM
+
+@{
+    ViewBag.Title = "Create";
+}
+<div style="padding-left: 230px;">
+    <br />
+    <br />
+    <br />
+    <h3>Assign Role</h3>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken();
+        <div class="form-horizontal">
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                @Html.Label("User Name", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("UserId", null, htmlAttributes: new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.Label("Role", new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("RoleName", null, htmlAttributes: new { @class = "form-control" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="Assign" class="btn btn-success" />
+                </div>
+            </div>
+        </div>
+    }
+    </div>

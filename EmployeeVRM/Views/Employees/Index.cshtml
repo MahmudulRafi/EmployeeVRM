@@ -1,0 +1,101 @@
+﻿@model IEnumerable<EmployeeVRM.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h3 style="color:maroon;">Employee List</h3>
+<br />
+
+<table id="myTable" class="table table-striped" style="width:100%;">
+    <thead class="thead-light text-black">
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+            <th>Phone</th>
+            <th></th>
+            <th></th>
+
+        </tr>
+    </thead>
+</table>
+
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+
+    <script>
+
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+                "ajax": {
+                    "url": "Employees/GetAllEmployee",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "employeeName", "autowidth": true },
+                    { "data": "employeeDesignation", "autowidth": true },
+                    { "data": "employeeDepartment", "autowidth": true },
+                    { "data": "employeePhone", "autowidth": true },
+
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="DetailsEmployee(' + data + ')"> Details</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="DeleteEmployee(' + data + ')"> Delete</button>'
+                        }
+                    }
+
+
+
+                ]
+            });
+
+        });
+
+
+        function DetailsEmployee(id) {
+            $.get("/Employees/DetailsPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+
+        function DeleteEmployee(id) {
+            $.get("/Employees/DeletePartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+        function Delete(id) {
+            var modal = $("#popupModal");
+            $.post("/Employees/Delete/", { id: id }, function (res) {
+                if (res == true) {
+                    modal.modal('hide');
+                    dataTable.ajax.reload();
+                    toastr.error("Employees Deleted Successfully", "Delete");
+                }
+            })
+        }
+
+    </script>
+
+}

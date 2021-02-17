@@ -1,0 +1,98 @@
+﻿@model EmployeeVRM.Models.MaintainanceRequisition
+
+@{
+    ViewBag.Title = "MaintainanceRFQ";
+}
+
+<h3>Maintainance Approval</h3>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal" style="padding-left:200px;">
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.id)
+
+    <div class="form-group">
+        @Html.Label("Vehicle", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.Vehicle.RegistrationNo)<i> - </i>  @Html.DisplayFor(model => model.Vehicle.Name)
+            @Html.HiddenFor(model => model.VehicleID)
+            @Html.ValidationMessageFor(model => model.VehicleID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @Html.HiddenFor(model => model.DriverID)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Supplierid, "Supplierid", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.Supplier.CompanyName)
+            @Html.HiddenFor(model => model.Supplierid)
+            @Html.ValidationMessageFor(model => model.Supplierid, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PartsNeeded, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.PartsNeeded)
+            @Html.HiddenFor(model => model.PartsNeeded)
+            @Html.ValidationMessageFor(model => model.PartsNeeded, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PartsCost, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.PartsCost)
+            @Html.HiddenFor(model => model.PartsCost)
+            @Html.ValidationMessageFor(model => model.PartsCost, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ServiceCosting, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.ServiceCosting)
+            @Html.HiddenFor(model => model.ServiceCosting)
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.EstimitedDeliveryDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DisplayFor(model => model.EstimitedDeliveryDate)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.HiddenFor(model => model.VerificationStatus)
+
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Requisition By", new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @ViewBag.verifierName <br />
+            @ViewBag.veirifierDesignation <i> , </i>
+            @ViewBag.veirifierDepartment
+            @Html.HiddenFor(model => model.VerifiedBy)
+            @Html.ValidationMessageFor(model => model.VerifiedBy, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="ApprovRFQ" name="decision" class="btn btn-success" /> &nbsp;
+            <input type="submit" value="Reject" name="decision" class="btn btn-danger" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

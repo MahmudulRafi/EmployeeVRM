@@ -1,0 +1,39 @@
+﻿@model EmployeeVRM.Models.VehicleRequisition
+
+@using (Html.BeginForm("Delete", "RepFilters", new { id = Model.id }))
+{
+    var myModal = "myModal" + Model.id;
+    <form name="DelateForm">
+        @Html.AntiForgeryToken()
+
+
+        <div class="modal-header" style="background-color: #ca3544; padding-left: 20px; color: white;">
+            <h5 class="modal-title" style="text-align:center;" id="popupModalLabel">Delete Requisition</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+
+        <div class="modal-body">
+            @Html.HiddenFor(model => model.id)
+            <div class="row" style="padding-left:95px;">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <div class="col-md-10">
+                            <h5><b>&nbsp; &nbsp; &nbsp; &nbsp; Are you sure to delete ?</b></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" onclick="Delete(@Model.id)" class="btn btn-danger"> Delete</button>
+        </div>
+
+    </form>
+}
+
+

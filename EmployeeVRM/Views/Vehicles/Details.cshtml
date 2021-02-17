@@ -1,0 +1,50 @@
+﻿@model EmployeeVRM.Models.Vehicle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Vehicle</h4>
+    <hr />
+    <dl class="dl-horizontal" style="padding-left: 160px;">
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistrationNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegistrationNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeatAllocated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeatAllocated)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VehicleID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

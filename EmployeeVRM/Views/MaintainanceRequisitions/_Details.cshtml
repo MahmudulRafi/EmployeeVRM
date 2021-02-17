@@ -1,0 +1,135 @@
+﻿@model EmployeeVRM.Models.MaintainanceRequisition
+
+<form name="DetailsForm">
+    @Html.AntiForgeryToken()
+
+    <div class="modal-header" style="background-color: #add2f9; padding-left: 20px;">
+        <h5 class="modal-title" id="popupModalLabel">Maintainance Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="modal-body" style="padding-left:130px;">
+
+        <dl class="dl-horizontal">
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ReportingDateTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ReportingDateTime)
+            </dd>
+
+            <dt>
+                @Html.DisplayName("Driver")
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Employee.Name)
+            </dd>
+
+
+            <dt>
+                @Html.DisplayName("Vehicle")
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Vehicle.RegistrationNo) <i> - </i>
+                @Html.DisplayFor(model => model.Vehicle.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Cause)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Cause)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Remarks)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Remarks)
+            </dd>
+            <dt>
+                @Html.DisplayName("Supplier")
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Supplier.CompanyName)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.PartsNeeded)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PartsNeeded)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PartsCost)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PartsCost)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ServiceCosting)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ServiceCosting)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EstimitedDeliveryDate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EstimitedDeliveryDate)
+            </dd>
+            <dt>
+                @Html.DisplayName("Requisition By")
+            </dt>
+
+            <dd>
+                @ViewBag.verifierName <br />
+                @ViewBag.veirifierDesignation <i> , </i>
+                @ViewBag.veirifierDepartment
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ApprovalDateTime)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ApprovalDateTime)
+            </dd>
+
+            <dt>
+                @Html.DisplayName("Approved By")
+            </dt>
+
+            <dd>
+                @ViewBag.approverName <br />
+                @ViewBag.approverDesignation @ViewBag.comma
+                @ViewBag.approverDepartment
+            </dd>
+
+        </dl>
+
+    </div>
+    
+
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+
+</form>
+
+

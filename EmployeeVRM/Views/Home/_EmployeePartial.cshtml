@@ -1,0 +1,62 @@
+﻿<div class="row">
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+            <div class="inner">
+                <h5><b>Profile</b></h5>
+
+                <p>Your Profile Is Completed</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-bag"></i>
+            </div>
+            <a href="@Url.Action("EmployeeProfile", "Employees")" class="small-box-footer"> View Profile <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-success">
+            <div class="inner">
+                <h5><b>Manage Requisitions</b></h5>
+
+                <p>Manage Your Requisitions</p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-stats-bars"></i>
+            </div>
+            <a href="@Url.Action("Index", "VehicleRequisitions")" class="small-box-footer">Manage Requisitions <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-warning">
+            <div class="inner">
+                <h5><b>On Going Requisitions</b></h5>
+
+                <p>Your On Going Requisitions : <b>@ViewBag.OnGoingEmployeeRequistitionCount </b></p>
+           </div>
+            <div class="icon">
+                <i class="ion ion-person-add"></i>
+            </div>
+            <a href="@Url.Action("OnGoingEmployeeRequisitions", "VehicleRequisitions")" class="small-box-footer">On Going Requisitions <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+    <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-danger">
+            <div class="inner">
+                <h5><b>Requisitions History</b></h5>
+
+                <p>Your Previous Requistions : <b> @ViewBag.PreviousEmployeeRequistitionCount </b></p>
+            </div>
+            <div class="icon">
+                <i class="ion ion-pie-graph"></i>
+            </div>
+            <a href="@Url.Action("EmployeeCompletedRequisitions", "VehicleRequisitions")" class="small-box-footer">Requisitions History <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <!-- ./col -->
+</div>

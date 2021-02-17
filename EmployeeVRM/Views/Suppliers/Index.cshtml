@@ -1,0 +1,143 @@
+﻿@model IEnumerable<EmployeeVRM.Models.Supplier>
+@{
+    ViewBag.Title = "Index";
+}
+
+<p>
+    <a class="btn btn-success" style="margin-bottom:10px" onclick="CreateSupplier()"><i class="fa fa-plus"></i> Add Supplier</a>
+</p>
+<table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+    <thead class="thead-light text-black text-lg-center">
+        <tr>
+            <th>Company Name</th>
+            <th>Phone</th>
+            <th></th>
+            <th></th>
+
+        </tr>
+    </thead>
+</table>
+
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+
+    <script>
+
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+                "ajax": {
+                    "url": "Suppliers/GetAllSupplier",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "CompanyName", "autowidth": true },
+                    { "data": "Phone", "autowidth": true },
+
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="EditSupplier(' + data + ')"> Edit</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "30px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="DeleteSupplier(' + data + ')"> Delete</button>'
+                        }
+                    }
+
+
+
+                ]
+            });
+
+        });
+
+        function CreateSupplier() {
+            $.get("/Suppliers/CreatePartial", function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Create() {
+            var modal = $("#popupModal");
+            var form = $('form[name="CreateForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Suppliers/Create", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Supplier Added Successfully.", "Added");
+                    }
+
+                })
+            }
+
+        }
+
+        function EditSupplier(id) {
+            $.get("/Suppliers/EditPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Edit(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="EditForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/Suppliers/Edit", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.info("Supplier Updated Sucessfully", "Updated");
+                    }
+
+                })
+            }
+
+        }
+
+        function DeleteSupplier(id) {
+            $.get("/Suppliers/DeletePartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+        function Delete(id) {
+            var modal = $("#popupModal");
+            $.post("/Suppliers/Delete/", { id: id }, function (res) {
+                if (res == true) {
+                    modal.modal('hide');
+                    dataTable.ajax.reload();
+                    toastr.error("Supplier Deleted Successfully", "Delete");
+                }
+            })
+        }
+
+    </script>
+
+}

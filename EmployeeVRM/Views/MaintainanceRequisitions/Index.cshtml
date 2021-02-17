@@ -1,0 +1,182 @@
+﻿@model IEnumerable<EmployeeVRM.Models.MaintainanceRequisition>
+@{
+    ViewBag.Title = "Index";
+}
+<h3> Maintainance Requisition </h3> <br />
+<p>
+    <a class="btn btn-success" style="margin-bottom:10px" onclick="CreateMaintainanceRequisition()"><i class="fa fa-plus"></i> New Requisition</a>
+</p>
+
+<table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+    <thead class="thead-light text-lg-center">
+        <tr>
+
+            <th>
+                Vehicle
+            </th>
+            <th>
+                Driver
+            </th>
+            <th>
+                Reporting Date Time
+            </th>
+            <th>
+                Issue
+            </th>
+            <th>
+                Parts Costing
+            </th>
+            <th>
+                Supplier
+            </th>
+            <th>
+                Estimated Delivery
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+
+        </tr>
+    </thead>
+</table>
+
+
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+@section scripts{
+
+
+    <script>
+
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+                "ajax": {
+                    "url": "MaintainanceRequisitions/GetAllMaintainanceRequisition",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "VehicleID", "autowidth": true },
+                    { "data": "DriverID", "autowidth": true },
+                    { "data": "ReportingDateTime", "autowidth": true },
+                    { "data": "Cause", "autowidth": true },
+                    { "data": "PartsCosting", "autowidth": true },
+                    { "data": "Supplier", "autowidth": true },
+                    { "data": "EstimatedDelivery", "autowidth": true },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-warning btn-sm" onclick ="EditRequisition(' + data + ')"> Edit</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="DetailsRequisition(' + data + ')"> Details</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="DeleteRequisition(' + data + ')"> Delete</button>'
+                        }
+                    }
+
+                ]
+            });
+
+        });
+
+
+        function DetailsRequisition(id) {
+            $.get("/MaintainanceRequisitions/DetailsPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function CreateMaintainanceRequisition() {
+            $.get("/MaintainanceRequisitions/CreatePartial", function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Create() {
+            var modal = $("#popupModal");
+            var form = $('form[name="CreateForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/MaintainanceRequisitions/Create", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Requisition Added Successfully.", "Added");
+                    }
+
+                })
+            }
+
+        }
+
+        function EditRequisition(id) {
+            $.get("/MaintainanceRequisitions/EditPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Edit(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="EditForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/MaintainanceRequisitions/Edit", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.info("Requisition Updated Sucessfully", "Updated");
+                    }
+
+                })
+            }
+
+        }
+
+        function DeleteRequisition(id) {
+            $.get("/MaintainanceRequisitions/DeletePartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+        function Delete(id) {
+            var modal = $("#popupModal");
+            $.post("/MaintainanceRequisitions/Delete/", { id: id }, function (res) {
+                if (res == true) {
+                    dataTable.ajax.reload();
+                    modal.modal('hide');
+                    toastr.error("Requisition Deleted Successfully", "Delete");
+                }
+            })
+        }
+
+    </script>
+
+
+}

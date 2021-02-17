@@ -1,0 +1,173 @@
+﻿@model IEnumerable<EmployeeVRM.Models.VehicleRequisition>
+
+@{
+    ViewBag.Title = "Vehicle Requisition";
+}
+
+<h3 style="color:maroon;">Vehicle Requisition</h3>
+<br />
+<p>
+    <a class="btn btn-success" style="margin-bottom:10px" onclick="CreateRequisition()"><i class="fa fa-plus"></i> New Requisition</a> &nbsp;
+    <a class="btn btn-warning" style="margin-bottom:10px" href="@Url.Action("OnGoingEmployeeRequisitions", "VehicleRequisitions")"><i class="fa fa-car"></i> On Going Requisition</a> &nbsp;
+    <a class="btn btn-info" style="margin-bottom:10px" href="@Url.Action("EmployeeCompletedRequisitions", "VehicleRequisitions")"><i class="fa fa-road"></i> Previous Requisition</a>
+
+</p>
+
+<table id="myTable" class="table table-striped" style="width:100%; text-align:center;">
+    <thead class="thead-light text-lg-center">
+        <tr>
+            <th>Vehicle</th>
+            <th>ReportingDateTime</th>
+            <th>StartDate</th>
+            <th>EndDate</th>
+            <th>VerificationStatus</th>
+
+            <th>Edit</th>
+            <th>Details</th>
+            <th>Delete</th>
+
+        </tr>
+    </thead>
+</table>
+
+<div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-labelledby="popupModalLable" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="popupModalBody">
+
+        </div>
+    </div>
+</div>
+
+
+
+
+@section Scripts
+{
+
+    <script>
+
+        var dataTable;
+        $(document).ready(function () {
+            dataTable = $("#myTable").DataTable({
+                "processing": true,
+                "ajax": {
+                    "url": "VehicleRequisitions/GetEmployeeVehicleRequisition",
+                    "type": "GET",
+                    "datatype": "json"
+                },
+
+                "columns": [
+                    { "data": "Vehicle", "autowidth": true },
+                    { "data": "ReportingDateTime", "autowidth": true },
+                    { "data": "StartDate", "autowidth": true },
+                    { "data": "EndDate", "autowidth": true },
+                    { "data": "VerificationStatus", "autowidth": true },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-warning btn-sm" onclick ="EditRequisition(' + data + ')"> Edit</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-info btn-sm" onclick ="DetailsRequisition(' + data + ')"> Details</button>'
+                        }
+                    },
+                    {
+                        "data": "id", "width": "25px", "render": function (data) {
+                            return '<button class = "btn btn-danger btn-sm" onclick ="DeleteRequisition(' + data + ')"> Delete</button>'
+                        }
+                    }
+
+                ]
+            });
+
+        });
+
+     
+        function DetailsRequisition(id) {
+            $.get("/VehicleRequisitions/DetailsPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function CreateRequisition() {
+            $.get("/VehicleRequisitions/CreatePartial", function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Create() {
+            var modal = $("#popupModal");
+            var form = $('form[name="CreateForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/VehicleRequisitions/Create", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.success("Requisition Added", "Added");
+                    }
+
+                })
+            }
+
+        }
+
+        function EditRequisition(id) {
+            $.get("/VehicleRequisitions/EditPartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+        function Edit(id) {
+            var modal = $("#popupModal");
+            var form = $('form[name="EditForm"]');
+
+            form.validate();
+            if (!form.valid()) {
+                return;
+            } else {
+                var data = form.serialize();
+                $.post("/VehicleRequisitions/Edit", data, function (res) {
+                    if (res) {
+                        modal.modal('hide');
+                        dataTable.ajax.reload();
+                        toastr.info("Requisition Updated", "Updated");
+                    }
+
+                })
+            }
+
+        }
+
+        function DeleteRequisition(id) {
+            $.get("/VehicleRequisitions/DeletePartial", { id: id }, function (res) {
+                $("#popupModalBody").html(res);
+                $("#popupModal").modal('show');
+            })
+        }
+
+
+        function Delete(id) {
+            var modal = $("#popupModal");
+            $.post("/VehicleRequisitions/Delete", { id: id }, function (res) {
+                if (res == true) {
+                    modal.modal('hide');
+                    dataTable.ajax.reload();
+                    toastr.error("Requisition Deleted", "Delete");
+                }
+            })
+        }
+
+       
+    </script>
+
+
+}
