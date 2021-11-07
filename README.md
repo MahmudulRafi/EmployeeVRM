@@ -1,7 +1,7 @@
 
 # EmployeeVRM
-**An office vehicle requisition and mainatainace system. <br/>
-Developed using Asp.Net MVC 5. In frontend used BootStrap, JavaScript. Used database MSSQL 2019.**
+An office vehicle requisition and mainatainace system. <br/>
+Developed using Asp.Net MVC 5. In frontend used BootStrap, JavaScript. Used database MSSQL 2019.
 
 
 ## Admin Dashboard
